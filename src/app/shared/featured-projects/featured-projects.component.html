@@ -1,5 +1,10 @@
-<swiper-container navigation="true">
-  <swiper-slide>Slide 1</swiper-slide>
-  <swiper-slide>Slide 2</swiper-slide>
-  <swiper-slide>Slide 3</swiper-slide>
+<swiper-container
+  slides-per-view="4"
+  speed="500"
+  css-mode="true"
+  scrollbar="true"
+>
+  <swiper-slide *ngFor="let project of featuredProjectData">
+    <p>{{project.title}}</p>
+  </swiper-slide>
 </swiper-container>
